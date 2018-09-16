@@ -1,0 +1,55 @@
+
+1.git config:Tell git who you are
+Ex:
+git config --global user.name "AsimJamal"
+git config --global user.email jamalasim081@gmail.com
+2.git init:Create a new local repository
+3.git clone:Check out a repository
+i>Create a working copy of a local repository:
+Ex: git clone /path/to/repository
+ii>For a remote server, use:
+Ex:git clone username@host:/path/to/repository
+4.git add:Add one or more files to staging (index)
+Ex:git add <filename> or git add *
+5.git commit:Commit changes to head (but not yet to the remote repository)
+Ex:git commit -m "Commit message" or git commit -am "Commit message"
+6.git push:Send changes to the master branch of your remote repository
+Ex:git push origin master
+7.git status:List the files you've changed and those you still need to add or commit
+Ex:git status
+8.git remote:If you haven't connected your local repository to a remote server, add the server to be able to push to it
+Ex:git remote add origin <server>
+9.git remote -v:List all currently configured remote repositories
+Ex:git remote -v
+10.git checkout:Create a new branch and switch to it
+Ex:git checkout -b <branchname>
+11.git checkout:Switch from one branch to another
+Ex:git checkout <branchname>
+12.git branch:List all the branches in your repo, and also tell you what branch you're currently in
+Ex:git branch
+i>Delete the feature branch:git branch -d <branchname>
+ii>Push the branch to your remote repository, so others can use it:git push origin <branchname>
+iii>Push all branches to your remote repository:git push --all origin
+iv>Delete a branch on your remote repository:git push origin :<branchname>
+13.git pull:Fetch and merge changes on the remote server to your working directory
+Ex: git pull
+13.git merge:To merge a different branch into your active branch
+Ex:git merge <branchname>
+14.git diff:View all the merge conflicts:git diff
+View the conflicts against the base file:git diff --base <filename>
+Preview changes, before merging:git diff <sourcebranch> <targetbranch>
+15.git log:CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using
+16.git push --tags origin:Push all tags to remote repository:
+17.git checkout -- <filename>:ou can replace the changes in your working tree with the last content in head:
+Changes already added to the index, as well as new files, will be kep
+18.git fetch origin:Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it
+19.git reset --hard origin/master: same as above
+20.git grep "foo():"Search the working directory for foo()
+
+
+
+
+
+
+
+
